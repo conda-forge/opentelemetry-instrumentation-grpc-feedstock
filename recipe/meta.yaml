@@ -26,9 +26,9 @@ requirements:
     - opentelemetry-semantic-conventions ==0.24b0
     - python >=3.6
     - wrapt <2.0.0,>=1.0.0
-    # - protobuf >=3.13.0
+    - protobuf >=3.13.0
     # - opentelemetry-test ==0.24b0
-    # - grpcio ~=1.27
+    - grpcio ~=1.27
 
 test:
   imports:
