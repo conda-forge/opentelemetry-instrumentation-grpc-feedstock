@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-grpc" %}
-{% set version = "0.44b0" %}
+{% set version = "0.45b0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_grpc-{{ version }}.tar.gz
-  sha256: 863b70b4dbb097c3ddfe34e3074289ca3a0d1a2beeb70898866de778d37497db
+  sha256: 5572c4a10a125774fb9d2705aa29aec1fc70d6f5a3cd070930fee86610931e71
 
 build:
   noarch: python
