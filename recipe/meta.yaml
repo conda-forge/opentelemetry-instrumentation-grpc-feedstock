@@ -26,34 +26,6 @@ requirements:
     - opentelemetry-sdk ~=1.12
     - opentelemetry-semantic-conventions =={{ version }}
     - wrapt <2.0.0,>=1.0.0
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.37b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.39b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.40b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.41b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.42b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.43b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.44b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
 
 test:
   imports:
