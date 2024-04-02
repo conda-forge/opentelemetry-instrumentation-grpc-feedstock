@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -22,39 +22,10 @@ requirements:
   run:
     - python >=3.7
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation ==0.45b0
+    - opentelemetry-instrumentation =={{ version }}
     - opentelemetry-sdk ~=1.12
-    - opentelemetry-semantic-conventions ==0.45b0
+    - opentelemetry-semantic-conventions =={{ version }}
     - wrapt <2.0.0,>=1.0.0
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.37b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.39b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.40b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.41b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.42b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.43b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - protobuf ~=3.13
-    # - opentelemetry-test-utils ==0.44b0
-    # - opentelemetry-instrumentation-grpc 
-    # - grpcio ~=1.27
-    # - grpcio ~=1.27
 
 test:
   imports:
@@ -73,4 +44,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - rxm7706
     - mariusvniekerk
