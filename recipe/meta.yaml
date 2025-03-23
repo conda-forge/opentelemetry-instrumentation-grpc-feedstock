@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-grpc" %}
-{% set version = "0.52b0" %}
+{% set version = "0.52b1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_grpc-{{ version }}.tar.gz
-  sha256: 6e0be69e7411943b7793c78b94714f470fe0277dddd92da3cc30e437df0329ab
+  sha256: b0c4f039820c828e3af72eb99157869bbe95291f926e25241b0eb759128352aa
 
 build:
   noarch: python
@@ -22,13 +22,14 @@ requirements:
   run:
     - python >={{ python_min }}
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation ==0.52b0
+    - opentelemetry-instrumentation ==0.52b1
     - opentelemetry-sdk ~=1.12
-    - opentelemetry-semantic-conventions ==0.52b0
+    - opentelemetry-semantic-conventions ==0.52b1
     - wrapt <2.0.0,>=1.0.0
     # - grpcio ~=1.27
     # - grpcio ~=1.27
     # - grpcio ~=1.27
+    # - grpcio >=1.42.0
     # - grpcio >=1.42.0
     # - grpcio >=1.42.0
     # - grpcio >=1.42.0
